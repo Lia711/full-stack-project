@@ -1,15 +1,18 @@
 import React from 'react'
 import "./AllGames.scss"
+import { Link } from 'react-router-dom';
 
-const AllGames = ({props}) => {
-    const games = props;
-    console.log(games)
-  return (
-    <div className='allGames'>
-        <h1>All Main Games in the Legend of Zelda Franchise:</h1>
-        <div>{games}</div>
-    </div>
-  )
+const AllGames = (props) => {
+    const {gamesDisplay} = props;
+    console.log(gamesDisplay)
+    return ( gamesDisplay.map((game)=>(
+        <div className='gameTile'>
+            <img src="" alt="" />
+            <Link to={`/game/${game.id}`} games = {gamesDisplay}>{game.title}</Link>
+        </div>
+    ))
+
+    )
 }
 
 export default AllGames

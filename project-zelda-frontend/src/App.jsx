@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Intro from './pages/Intro/Intro';
 import AllGames from './pages/AllGames/AllGames';
 import Game from './pages/Game/Game';
+import gamesData from './assets/data/gamesData';
 
 function App() {
 
@@ -19,7 +20,6 @@ function App() {
       console.log("this is the error", e)
     }
   }
-  console.log(games);
 
   useEffect(()=>{
     getAllGames();
@@ -37,7 +37,7 @@ function App() {
 
         <Route
         path={"/games"}
-        element={<AllGames gamesDisplay={games}/>
+        element={<AllGames gamesDisplay={gamesData}/>
         }
         />
 
