@@ -6,7 +6,6 @@ function App() {
   const [games, setGames] = useState([]);
 
   const getAllGames = async()=> {
-    // {headers: {'Access-Control-Allow-Origin':'*'}}
     let url=`http://localhost:8080/games`;
     try {
       const response = await fetch(url)
