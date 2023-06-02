@@ -1,5 +1,9 @@
 import {React, useState, useEffect} from 'react'
 import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Intro from './pages/Intro/Intro';
+import AllGames from './pages/AllGames/AllGames';
+import Game from './pages/Game/Game';
 
 function App() {
 
@@ -22,10 +26,29 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
-      <h1>Zelda Games</h1>
-      <div>{games}</div>
-    </div>
+    <Router>
+    <Routes>
+        
+        <Route
+        path="/"
+        element={<Intro/>
+        }
+        />
+
+        <Route
+        path={"/games"}
+        element={<AllGames gamesDisplay={games}/>
+        }
+        />
+
+        <Route
+        path={"/game/:gameId"}
+        element={<Game/>
+        }
+        />
+
+      </Routes>
+      </Router>
   );
 }
 
