@@ -1,18 +1,143 @@
 const gamesData = [
-        {
-          title: "The Legend of Zelda",
-          platform: "Famicom Disk System, Nintendo Entertainment System",
-          year: 1986,
-          id: 1,
-          story: "A small kingdom in the land of Hyrule is engulfed by chaos when an army led by Ganon, the prince of darkness, invades and steals the Triforce of Power, one part of a magical artifact which alone bestows great strength.In an attempt to prevent him from acquiring the Triforce of Wisdom, Princess Zelda splits it into eight fragments and hides them in secret underground dungeons.Before eventually being kidnapped by Ganon, she commands her nursemaid Impa to find someone courageous enough to save the kingdom. While wandering the land, the old woman is surrounded by Ganon's henchmen, when a young boy named Link appears and rescues her. Upon hearing Impa's plea, he resolves to save Zelda and sets out to reassemble the scattered fragments of the Triforce of Wisdom, with which Ganon can then be defeated. During the course of the tale, Link locates and braves the eight underworld labyrinths, and beyond their defeated guardian monsters retrieves each fragment. With the completed Triforce of Wisdom, he is able to infiltrate Ganon's hideout in Death Mountain, confronting the prince of darkness and destroying him with the Silver Arrow. Obtaining the Triforce of Power from Ganon's ashes, Link returns it and the restored Triforce of Wisdom to the rescued Princess Zelda, and peace returns to Hyrule."
-        },
-        {
-          title: "Zelda II: The Adventure of Link",
-          platform: "Zelda II: The Adventure of Link",
-          year: 1987,
-          id: 2,
-          story: "Several years after the events of The Legend of Zelda, the now-16-year-old Link notices a strange mark on the back of his left hand, exactly like the crest of Hyrule. He seeks out Impa, who takes him to the North Castle, where a door has been magically sealed for generations. Impa places the back of Link's left hand on the door, and it opens, revealing a sleeping maiden. Impa tells Link that the maiden is Zelda (not the Zelda from the first game), the princess of Hyrule from long ago. Zelda's brother tried to force her into telling their recently deceased father's secrets concerning the Triforce. Princess Zelda refused to reveal its location, and the prince's wizard friend, in anger, tried to strike her down with a spell. Zelda fell under a powerful sleeping spell, but the wizard was unable to control the wildly arcing magic and was killed by it. The prince, filled with remorse and unable to reverse the spell, had his sister placed in the castle tower, hoping she would one day be awakened. He decreed that princesses born to the royal family from that point on would be named Zelda, in remembrance of this tragedy. Impa says that the mark on Link's hand means that he is the hero chosen to awaken Zelda. She gives Link a chest containing six crystals and ancient writings that only a great future king of Hyrule can read. Link finds that he can read the document, even though he has never seen the language before; it indicates that the crystals must be set into statues within six palaces scattered across Hyrule. This will open the way to the Great Palace, which contains the Triforce of Courage. Only the power of the combined Triforces can awaken Zelda. Taking the crystals, Link sets out to restore them to their palaces. Meanwhile, Ganon's followers seek to kill Link, as sprinkling his blood on Ganon's ashes will bring Ganon back to life. Ultimately, Link restores the crystals to the six palaces and enters the Great Palace. After venturing deep inside, Link battles the last of the guardians, a flying creature known as Thunderbird. Afterwards, his true heart is tested by fighting his own shadow (aka doppelgänger Dark Link). Link then claims the Triforce of Courage and returns to Zelda. The three triangles unite into the Triforce, and Link's wish awakens Zelda."
-        }
-    ]
+  {
+    id: 1,
+    title: "The Legend of Zelda",
+    year: 1986,
+    platform: "NES",
+    summary: "Link embarks on a quest to rescue Princess Zelda and defeat the evil Ganon.",
+    image: "zelda1_boxart.jpg"
+  },
+  {
+    id: 2,
+    title: "The Adventure of Link",
+    year: 1987,
+    platform: "NES",
+    summary: "Link must awaken the sleeping Princess Zelda by placing six crystals in palaces across Hyrule.",
+    image: "zelda2_boxart.jpg"
+  },
+  {
+    id: 3,
+    title: "A Link to the Past",
+    year: 1991,
+    platform: "SNES",
+    summary: "Link must rescue Princess Zelda and defeat the sorcerer Agahnim to stop the return of Ganon.",
+    image: "zelda3_boxart.jpg"
+  },
+  {
+    id: 4,
+    title: "Link's Awakening",
+    year: 1993,
+    platform: "Game Boy",
+    summary: "Shipwrecked on Koholint Island, Link must awaken the Wind Fish to escape.",
+    image: "zelda4_boxart.jpg"
+  },
+  {
+    id: 5,
+    title: "Ocarina of Time",
+    year: 1998,
+    platform: "Nintendo 64",
+    summary: "Link must travel through time to stop Ganondorf and prevent the destruction of Hyrule.",
+    image: "zelda5_boxart.jpg"
+  },
+  {
+    id: 6,
+    title: "Majora's Mask",
+    year: 2000,
+    platform: "Nintendo 64",
+    summary: "Link must stop the moon from crashing into Termina within three days using time manipulation.",
+    image: "zelda6_boxart.jpg"
+  },
+  {
+    id: 7,
+    title: "Oracle of Ages",
+    year: 2001,
+    platform: "Game Boy Color",
+    summary: "Link embarks on a quest through time to rescue Nayru, the Oracle of Ages.",
+    image: "zelda7_boxart.jpg"
+  },
+  {
+    id: 8,
+    title: "Oracle of Seasons",
+    year: 2001,
+    platform: "Game Boy Color",
+    summary: "Link must rescue Din, the Oracle of Seasons, and prevent the destruction of Holodrum.",
+    image: "zelda8_boxart.jpg"
+  },
+  {
+    id: 9,
+    title: "The Wind Waker",
+    year: 2002,
+    platform: "GameCube",
+    summary: "Link sets sail on the Great Sea to rescue his sister and defeat the sorcerer Ganon.",
+    image: "zelda9_boxart.jpg"
+  },
+  {
+    id: 10,
+    title: "The Minish Cap",
+    year: 2004,
+    platform: "Game Boy Advance",
+    summary: "Link must save Princess Zelda and defeat the evil sorcerer Vaati with the help of the Minish Cap.",
+    image: "zelda10_boxart.jpg"
+  },
+  {
+    id: 11,
+    title: "Twilight Princess",
+    year: 2006,
+    platform: "GameCube, Wii",
+    summary: "Link must save Hyrule and the Twilight Realm from the dark forces of Zant and Ganondorf.",
+    image: "zelda11_boxart.jpg"
+  },
+  {
+    id: 12,
+    title: "Phantom Hourglass",
+    year: 2007,
+    platform: "Nintendo DS",
+    summary: "Link must rescue Tetra and defeat the evil Bellum while exploring the Temple of the Ocean King.",
+    image: "zelda12_boxart.jpg"
+  },
+  {
+    id: 13,
+    title: "Spirit Tracks",
+    year: 2009,
+    platform: "Nintendo DS",
+    summary: "Link must rescue Princess Zelda and restore the Spirit Tracks to defeat the evil Chancellor Cole.",
+    image: "zelda13_boxart.jpg"
+  },
+  {
+    id: 14,
+    title: "Skyward Sword",
+    year: 2011,
+    platform: "Wii",
+    summary: "Link embarks on a quest to rescue Zelda and defeat the demon lord Ghirahim and the ancient evil Demise.",
+    image: "zelda14_boxart.jpg"
+  },
+  {
+    id: 15,
+    title: "A Link Between Worlds",
+    year: 2013,
+    platform: "Nintendo 3DS",
+    summary: "Link must save Princess Zelda and the kingdom of Hyrule from the sorcerer Yuga.",
+    image: "zelda15_boxart.jpg"
+  },
+  {
+    id: 16,
+    title: "Tri Force Heroes",
+    year: 2015,
+    platform: "Nintendo 3DS",
+    summary: "Link must team up with two other heroes to rescue Princess Styla and defeat the witch Lady Maud.",
+    image: "zelda16_boxart.jpg"
+  },
+  {
+    id: 17,
+    title: "Breath of the Wild",
+    year: 2017,
+    platform: "Nintendo Switch",
+    summary: "Link awakens from a hundred-year slumber to defeat Calamity Ganon and save Princess Zelda.",
+    image: "zelda17_boxart.jpg"
+  }
+]
 
 export default gamesData;
+
+
+

@@ -7,7 +7,7 @@ const AllGames = (props) => {
     console.log(gamesDisplay)
     return ( gamesDisplay.map((game)=>(
         <div className='gameTile'>
-            <img src="" alt="" />
+            <img src={game.boxArt} alt="" />
             <Link to={`/game/${game.id}`} games = {gamesDisplay}>{game.title}</Link>
         </div>
     ))

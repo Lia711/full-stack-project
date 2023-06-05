@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Hyrule";
+    src: url('//HyliaSerifBeta-Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.titlePage {
+    padding-left:25px;
+    height:100vh;
+    padding-right:25px;
+    color:#241606;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 12px solid #CC9E48;
+}
+
+.logo {
+    width:400px;
+    padding:30px;
+}
+
+.title{
+    padding-top:35px;
+    font-family: "Hyrule";
+    color:#482d0e;
+    font-size: 60px;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+}
+
+.about {
+    font-family: "Hyrule";
+    color:#482d0e;
+    font-size:20px;
+}
+
+.link {
+    padding-top: 25px;
+    font-family: "Hyrule";
+    color:#0e480f;
+    font-size:25px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+

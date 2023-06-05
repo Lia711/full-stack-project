@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Intro from './pages/Intro/Intro';
 import AllGames from './pages/AllGames/AllGames';
 import Game from './pages/Game/Game';
-import gamesData from './assets/data/gamesData';
+import gamesData from './assets/data/games.json';
 
 function App() {
 
