@@ -2,9 +2,10 @@ import {React, useState, useEffect} from 'react'
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Intro from './pages/Intro/Intro';
-import AllGames from './pages/AllGames/AllGames';
+import AllGames from './components/AllGames/AllGames';
 import Game from './pages/Game/Game';
 import gamesData from './assets/data/games.json';
+import GamesPage from './pages/GamesPage/GamesPage';
 
 function App() {
 
@@ -37,7 +38,7 @@ function App() {
 
         <Route
         path={"/games"}
-        element={<AllGames gamesDisplay={gamesData}/>
+        element={<GamesPage gamesDisplay={gamesData}/>
         }
         />
 
