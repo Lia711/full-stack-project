@@ -1,13 +1,47 @@
 package com.example.zelda;
 
-import java.util.Random;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class Game {
-    private int id = new Random().nextInt();
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String title;
 
     private int year;
-    private String system;
+    private String platform;
+    private String summary;
+    private String boxArt;
+
+    public String getPlatform() {
+        return platform;
+    }
+
+    public void setPlatform(String platform) {
+        this.platform = platform;
+    }
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public void setSummary(String summary) {
+        this.summary = summary;
+    }
+
+    public String getBoxArt() {
+        return boxArt;
+    }
+
+    public void setBoxArt(String boxArt) {
+        this.boxArt = boxArt;
+    }
+
     public int getId() {
         return id;
     }
@@ -32,19 +66,14 @@ public class Game {
         this.year = year;
     }
 
-    public String getSystem() {
-        return system;
-    }
 
-    public void setSystem(String system) {
-        this.system = system;
-    }
-
-    public Game(int id, String title, int year, String system) {
+    public Game(int id, String title, int year, String platform, String summary, String boxArt) {
         this.id = id;
         this.title = title;
         this.year = year;
-        this.system = system;
+        this.platform = platform;
+        this.summary = summary;
+        this.boxArt = boxArt;
     }
 
 
