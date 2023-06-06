@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public interface GamesRepository extends JpaRepository<Game, Integer> {
+public interface GamesRepository extends JpaRepository<Game, Long> {
 
 }
 

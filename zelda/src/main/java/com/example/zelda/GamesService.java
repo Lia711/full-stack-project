@@ -12,7 +12,7 @@ public class GamesService {
     @Autowired
     GamesRepository gamesRepository;
 
-    public Game getGameById(int id) {
+    public Game getGameById(long id) {
         Optional<Game> game = gamesRepository.findById(id);
         return game.get();
     }

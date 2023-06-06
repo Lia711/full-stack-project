@@ -1,24 +1,23 @@
 package com.example.zelda;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Game {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private long id;
     private String title;
 
-    private int year;
+    private String year;
     private String platform;
+    @Column(length= 600)
     private String summary;
+    @Column(length= 600)
     private String boxArt;
 
-    public Game(int id, String title, int year, String platform, String summary, String boxArt) {
+    public Game(long id, String title, String year, String platform, String summary, String boxArt) {
         this.id = id;
         this.title = title;
         this.year = year;
@@ -54,7 +53,7 @@ public class Game {
         this.boxArt = boxArt;
     }
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
@@ -70,11 +69,11 @@ public class Game {
         this.title = title;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 
-    public void setYear(int year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
