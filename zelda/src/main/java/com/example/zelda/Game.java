@@ -18,6 +18,18 @@ public class Game {
     private String summary;
     private String boxArt;
 
+    public Game(int id, String title, int year, String platform, String summary, String boxArt) {
+        this.id = id;
+        this.title = title;
+        this.year = year;
+        this.platform = platform;
+        this.summary = summary;
+        this.boxArt = boxArt;
+    }
+
+    public Game() {
+    }
+
     public String getPlatform() {
         return platform;
     }
@@ -67,14 +79,7 @@ public class Game {
     }
 
 
-    public Game(int id, String title, int year, String platform, String summary, String boxArt) {
-        this.id = id;
-        this.title = title;
-        this.year = year;
-        this.platform = platform;
-        this.summary = summary;
-        this.boxArt = boxArt;
-    }
+
 
 
 }
