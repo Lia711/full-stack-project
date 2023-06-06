@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from "react-router-dom";
-import gamesData from '../../assets/data/gamesData';
+import gamesData from '../../assets/data/games.json';
 import "./Game.scss"
 
 const Game = () => {

@@ -4,7 +4,7 @@ const gamesData = [
     title: "The Legend of Zelda",
     year: 1986,
     platform: "NES",
-    summary: "Link embarks on a quest to rescue Princess Zelda and defeat the evil Ganon.",
+    summary: " In the original game, the hero named Link embarks on a quest to rescue Princess Zelda and defeat the evil Ganon. Armed with the legendary Master Sword, Link explores the vast land of Hyrule, uncovers dungeons, solves puzzles, and collects powerful items to restore peace and harmony to the kingdom.",
     image: "zelda1_boxart.jpg"
   },
   {
