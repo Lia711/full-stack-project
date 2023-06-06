@@ -4,12 +4,13 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Intro from './pages/Intro/Intro';
 import AllGames from './components/AllGames/AllGames';
 import Game from './pages/Game/Game';
-import gamesData from './assets/data/games.json';
+//import gamesData from './assets/data/games.json';
 import GamesPage from './pages/GamesPage/GamesPage';
 
 function App() {
 
   const [games, setGames] = useState([]);
+  
 
   const getAllGames = async()=> {
     let url=`http://localhost:8080/games`;
@@ -21,6 +22,7 @@ function App() {
       console.log("this is the error", e)
     }
   }
+
 
   useEffect(()=>{
     getAllGames();
@@ -38,13 +40,13 @@ function App() {
 
         <Route
         path={"/games"}
-        element={<GamesPage gamesDisplay={gamesData}/>
+        element={<GamesPage games={games}/>
         }
         />
 
         <Route
         path={"/game/:gameId"}
-        element={<Game/>
+        element={<Game games={games}/>
         }
         />
 
