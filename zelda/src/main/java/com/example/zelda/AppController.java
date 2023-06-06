@@ -14,17 +14,17 @@ import java.util.List;
 public class AppController {
 
     @Autowired
-    GamesRepository gamesRepository;
+    GamesService gamesService;
 
 
     @GetMapping("/games")
     public List<Game> getGames() {
-        return gamesRepository.getAllGames();
+        return gamesService.getAllGames();
     }
 
     @GetMapping("game/{id}")
     public Game getGameById(@PathVariable int id) {
-        return gamesRepository.getGameById(id);
+        return gamesService.getGameById(id);
     }
 
 }
