@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 
 const AllGames = (props) => {
     const {games} = props;
-    //console.log("this is my games display", games)
-    console.log("art", games[0].box_art)
+    console.log("this is my games display", games)
+    //console.log("art", games[0].box_art)
     return ( games.map((game)=>(
         <div className='gameTile'>
-            <img src={game.box_art} alt="" />
+            <img src={game.boxArt} alt="box art of zelda game" />
             <Link to={`/game/${game.id}`} className='name'>{game.title}</Link>
         </div>
     ))
