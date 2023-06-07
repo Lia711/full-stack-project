@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 //import gamesData from '../../assets/data/games.json';
 import "./Game.scss"
+import Nav from '../../components/Nav/Nav';
 
 const Game = () => {
 
@@ -21,19 +22,16 @@ const Game = () => {
   }, [])
   console.log("SelectedGame", selectedGame)
   console.log("gameid", gameId)
-    //const games=props;
-    
-    //console.log({gamesData});
-    //const currentGame = games.find((game) => (game.id == gameId));
     const {title, platform, year, id, summary} = selectedGame;
-    
-
   return (
+    <div className='allContent'>
+      <Nav/>
     <div className='gameContainer'>
         <h1 className='title'>{title}</h1>
         <h2 className='year'>Year of release: {year}</h2>
         <h2 className='console'>First available on: {platform}</h2>
         <p className='about'>Storyline: {summary}</p>
+    </div>
     </div>
   )
 }

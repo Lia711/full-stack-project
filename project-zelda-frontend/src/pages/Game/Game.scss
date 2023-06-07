@@ -7,9 +7,10 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    background-color:rgb(105, 184, 127);
+    //background-color:rgb(105, 184, 127);
 }
 .gameContainer {
+    background-color:rgb(105, 184, 127);
     padding-left:25px;
     height:100vh;
     padding-right:25px;
@@ -17,7 +18,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 12px solid #CC9E48;
+    //border: 12px solid #CC9E48;
     
 
     .title{

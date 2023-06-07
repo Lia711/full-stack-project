@@ -7,15 +7,16 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
-    background-color:rgb(105, 184, 127);
+    //background-color:rgb(105, 184, 127);
 }
 
 .gamesPage {
-    border: 12px solid #CC9E48;
+    //border: 12px solid #CC9E48;
     padding:30px;
     display: flex;
-
-
+    flex-direction: column;
+    width:100%;
+    background-color:rgb(105, 184, 127);
 
     .gameTiles {
         display: grid;
@@ -25,7 +26,9 @@
 }
 
 .header{
-    padding:12px;
+    //padding:12px;
+    padding-bottom:35px;
+    text-align: center;
         font-family: "Hyrule";
         color:#482d0e;
         font-size: 60px;

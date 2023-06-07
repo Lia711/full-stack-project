@@ -9,7 +9,13 @@
     text-decoration: none;
 }
 
+.allContent {
+    display: flex;
+    border: 12px solid #CC9E48;
+}
+
 .titlePage {
+    background-color:rgb(105, 184, 127);
     padding-left:25px;
     height:100vh;
     padding-right:25px;
@@ -17,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 12px solid #CC9E48;
+    
 }
 
 .logo {
