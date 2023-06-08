@@ -17,13 +17,21 @@ public class Game {
     @Column(length= 600)
     private String boxArt;
 
-    public Game(long id, String title, String year, String platform, String summary, String boxArt) {
+    @Column(length= 600)
+    private String gif1;
+
+    @Column(length= 600)
+    private String gif2;
+
+    public Game(long id, String title, String year, String platform, String summary, String boxArt, String gif1, String gif2) {
         this.id = id;
         this.title = title;
         this.year = year;
         this.platform = platform;
         this.summary = summary;
         this.boxArt = boxArt;
+        this.gif1 = gif1;
+        this.gif2 = gif2;
     }
 
     public Game() {
@@ -59,6 +67,22 @@ public class Game {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getGif1() {
+        return gif1;
+    }
+
+    public void setGif1(String gif1) {
+        this.gif1 = gif1;
+    }
+
+    public String getGif2() {
+        return gif2;
+    }
+
+    public void setGif2(String gif2) {
+        this.gif2 = gif2;
     }
 
     public String getTitle() {
