@@ -22,7 +22,7 @@ const Game = () => {
   }, [])
   console.log("SelectedGame", selectedGame)
   console.log("gameid", gameId)
-    const {title, platform, year, id, summary} = selectedGame;
+    const {title, platform, year, id, summary, gif1, gif2} = selectedGame;
   return (
     <div className='allContent'>
       <Nav/>
@@ -30,6 +30,10 @@ const Game = () => {
         <h1 className='title'>{title}</h1>
         <h2 className='year'>Year of release: {year}</h2>
         <h2 className='console'>First available on: {platform}</h2>
+        <div className='gifs'>
+        <img src={gif1} alt="game gif"/>
+        <img src={gif2} alt="game gif"/>
+        </div>
         <p className='about'>Storyline: {summary}</p>
     </div>
     </div>
