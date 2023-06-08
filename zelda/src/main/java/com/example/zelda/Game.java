@@ -1,6 +1,9 @@
 package com.example.zelda;
 
 import javax.persistence.*;
+import java.time.Year;
+
+import static java.lang.String.valueOf;
 
 @Entity
 public class Game {
@@ -10,7 +13,7 @@ public class Game {
     private long id;
     private String title;
 
-    private String year;
+    private String year =  valueOf(Year.now().getValue());
     private String platform;
     @Column(length= 600)
     private String summary;

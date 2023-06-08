@@ -12,6 +12,9 @@ public class GamesService {
     @Autowired
     GamesRepository gamesRepository;
 
+    public void addGame(Game game){
+        gamesRepository.save(game);
+    }
     public Game getGameById(long id) {
         Optional<Game> game = gamesRepository.findById(id);
         return game.get();

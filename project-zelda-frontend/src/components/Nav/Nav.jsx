@@ -18,6 +18,10 @@ const Nav = () => {
         <Link to="/games">
           <h1 className='header'>All Games</h1>
         </Link>
+
+        <Link to="/game/create">
+          <h1 className='header'>Create Game</h1>
+        </Link>
       </section>
     </>
   )

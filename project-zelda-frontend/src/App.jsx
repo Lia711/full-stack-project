@@ -6,6 +6,7 @@ import AllGames from './components/AllGames/AllGames';
 import Game from './pages/Game/Game';
 //import gamesData from './assets/data/games.json';
 import GamesPage from './pages/GamesPage/GamesPage';
+import Create from './pages/Create/Create';
 
 function App() {
 
@@ -30,10 +31,9 @@ console.log("games", games)
 
   return (
     <Router>
-    <Routes>
+      <Routes>
         
-        <Route
-        path="/"
+        <Route path="/"
         element={<Intro/>
         }
         />
@@ -50,8 +50,12 @@ console.log("games", games)
         }
         />
 
+        <Route
+        path={"/game/create"}
+        element={<Create/>}/>
+
       </Routes>
-      </Router>
+    </Router>
   );
 }
 
