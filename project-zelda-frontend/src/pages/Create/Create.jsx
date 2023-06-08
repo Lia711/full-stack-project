@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Create.scss"
-import { Form } from 'react-router-dom'
+import Form from '../../components/Form/Form';
+import Nav from '../../components/Nav/Nav';
 
 const Create = () => {
 
@@ -24,7 +25,9 @@ const Create = () => {
   const defaultFormState = { title: ""};
 
   return (
-    <section className="create">
+    <div className='allContent'>
+        <Nav/>
+        <section className="create">
       <h2 className="title">Create a Game!</h2>
       <Form
         handleSubmit={handleSubmit}
@@ -32,6 +35,7 @@ const Create = () => {
         formTitle="Add A New Game"
       />
     </section>
+    </div>
   );
 };
 

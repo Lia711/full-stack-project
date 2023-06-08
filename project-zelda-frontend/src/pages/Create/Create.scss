@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Hyrule";
+    src: url('//HyliaSerifBeta-Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.create {
+    //border: 12px solid #CC9E48;
+    padding:30px;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    background-color:rgb(105, 184, 127);
+
+    h2 {
+        text-align: center;
+    }
+}
