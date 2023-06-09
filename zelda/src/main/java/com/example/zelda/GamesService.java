@@ -3,6 +3,7 @@ package com.example.zelda;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -22,5 +23,19 @@ public class GamesService {
 
     public List<Game> getAllGames() {
         return gamesRepository.findAll().stream().collect(Collectors.toList());
+    }
+
+    public Game getRandomGame() {
+        return gamesRepository.getRandomGame();
+    }
+
+    public void updateGame(Game newGame, long id) {
+        newGame.setId(id);
+        gamesRepository.save(newGame);
+    }
+
+    @Transactional
+    public void deleteGameById(long id) {
+        gamesRepository.deleteGameById(id);
     }
 }
