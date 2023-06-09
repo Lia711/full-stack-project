@@ -22,7 +22,7 @@ const Create = () => {
     }
   };
 
-  const defaultFormState = { title: ""};
+  const defaultFormState = { title: "", platform: "", boxArt: "", gif1: "", gif2: "", summary: ""};
 
   return (
     <div className='allContent'>
@@ -32,7 +32,6 @@ const Create = () => {
       <Form
         handleSubmit={handleSubmit}
         defaultFormState={defaultFormState}
-        formTitle="Add A New Game"
       />
     </section>
     </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import "./Form.scss"
 import { useState } from 'react';
 
-const Form = (defaultFormState, handleSubmit, formTitle) => {
+const Form = ({defaultFormState, handleSubmit}) => {
     const [game, setGame] = useState(defaultFormState);
 
     const handleValidation = event => {
@@ -16,7 +16,6 @@ const Form = (defaultFormState, handleSubmit, formTitle) => {
 
   return (
     <div className='container'>
-        <h1 className='form-title'>{formTitle}</h1>
         <form className="form" onSubmit={handleValidation}>
 
         <label htmlFor="title">Title : </label>
@@ -45,7 +44,7 @@ const Form = (defaultFormState, handleSubmit, formTitle) => {
           className="input"
           type="text"
           placeholder="boxArt"
-          value={game.platform}
+          value={game.boxArt}
           onInput={event => setGame({ ...game, boxArt: event.target.value })}
         />
 

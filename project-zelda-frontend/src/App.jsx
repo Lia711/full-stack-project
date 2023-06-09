@@ -51,7 +51,7 @@ console.log("games", games)
         />
 
         <Route
-        path={"/game/lia"}
+        path={"/game/create"}
         element={<Create/>}/>
 
       </Routes>
