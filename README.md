@@ -1,4 +1,4 @@
-# full-stack-project
+# Full Stack Project
 
 Personal project for the Legend of Zelda video game franchise, featuring front-end and back-end.
 
@@ -18,11 +18,17 @@ If all fields are completed, the game is then added to the database and has the 
 - Intro page that has an introduction to the series, as well as a link to the games gallery
 
 Backend (built in Java with Spring Boot):
-- 
+- AppController with different endpoints for getting, updating and deleting games
+- Game class with getters, setters and constructors for the properties of Game. ID is automatically created, and the year is set as the current year by default when creating a game
+- GamesRepository reposotory which has functions for getting a random game (using SQL commands) and deleting a game by its id
+- GamesService that has methods for gettings, updating and deleting games
+- ZeldaApplication which runs the application
+
+Database file of Zelda games created with the help of OpenAI and then imported into MySQL.
 
 
 ### Known Issues
 
-- search bar and select filter only have a decorative purpose as of now
-
+- editing, deleting and getting a random game are not yeat fully implemented into the front-end
+- styling issues in the games library
 
