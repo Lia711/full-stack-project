@@ -7,6 +7,7 @@ import Game from './pages/Game/Game';
 //import gamesData from './assets/data/games.json';
 import GamesPage from './pages/GamesPage/GamesPage';
 import Create from './pages/Create/Create';
+import Edit from './pages/Edit/Edit';
 
 function App() {
 
@@ -53,6 +54,10 @@ console.log("games", games)
         <Route
         path={"/game/create"}
         element={<Create/>}/>
+
+        <Route 
+        path={"/game/edit/:id"} 
+        element={<Edit/>} />
 
       </Routes>
     </Router>

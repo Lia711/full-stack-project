@@ -20,8 +20,9 @@ const Nav = () => {
         </Link>
 
         <Link to="/game/create">
-          <h1 className='header'>Create Game</h1>
+          <h1 className='header'>Create</h1>
         </Link>
+
       </section>
     </>
   )
