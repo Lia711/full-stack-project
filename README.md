@@ -32,3 +32,17 @@ Database file of Zelda games created with the help of OpenAI and then imported i
 - editing, deleting and getting a random game are not yeat fully implemented into the front-end
 - styling issues in the games library
 
+### Screenshots
+
+![image](https://github.com/Lia711/full-stack-project/assets/125596830/d7bafc11-51fc-4b59-bf4f-dff6899c7ede)
+
+![image](https://github.com/Lia711/full-stack-project/assets/125596830/9ff73239-4cd0-43ca-93f5-335cd9aa9210)
+
+![image](https://github.com/Lia711/full-stack-project/assets/125596830/25519d71-3c3a-4d70-8d5f-3c9fd0f07ffd)
+
+![image](https://github.com/Lia711/full-stack-project/assets/125596830/49fadd37-5405-41bb-95ef-adf5853343dd)
+
+
+
+
+
