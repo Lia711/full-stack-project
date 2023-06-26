@@ -1,6 +1,6 @@
 # Full Stack Project
 
-Personal project for the Legend of Zelda video game franchise, featuring front-end and back-end.
+Personal project for the Legend of Zelda video game franchise made using REACT and Java for frontend and backend.
 
 ## Features
 
@@ -29,9 +29,9 @@ Database file of Zelda games created with the help of OpenAI and then imported i
 
 ### Known Issues
 
-- editing, deleting and getting a random game are not yeat fully implemented into the front-end
-- styling issues in the games library
-
+- getting random game not yet implemented in front-end
+- styling issues on some pages
+  
 ### Screenshots
 
 ![image](https://github.com/Lia711/full-stack-project/assets/125596830/d7bafc11-51fc-4b59-bf4f-dff6899c7ede)
