@@ -2,6 +2,8 @@ import React from 'react'
 import "./Edit.scss"
 import { useState, useParams, useEffect } from 'react';
 import Nav from '../../components/Nav/Nav';
+import { Form } from 'react-router-dom';
+
 
 const Edit = () => {
     const [selectedGame, setSelectedGame] = useState([]);
@@ -55,8 +57,9 @@ const Edit = () => {
   return (
     <div>
         <Nav/>
-        <h1>Edit</h1>
-        <h2>Delete</h2>
+        <Form defaultFormState={selectedGame}/>
+        <button onClick={handleUpdate}>Update</button>
+        <button onClick={handleDelete}>Delete</button>
     </div>
   )
 }

@@ -56,8 +56,8 @@ console.log("games", games)
         element={<Create/>}/>
 
         <Route 
-        path={"/game/edit/:id"} 
-        element={<Edit/>} />
+        path={"/game/edit/:gameId"} 
+        element={<Edit games={games}/>} />
 
       </Routes>
     </Router>

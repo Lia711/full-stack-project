@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 //import gamesData from '../../assets/data/games.json';
 import "./Game.scss"
 import Nav from '../../components/Nav/Nav';
@@ -20,8 +20,6 @@ const Game = () => {
   useEffect(()=> {
     getGameById(gameId);
   }, [])
-  console.log("SelectedGame", selectedGame)
-  console.log("gameid", gameId)
     const {title, platform, year, id, summary, gif1, gif2} = selectedGame;
   return (
     <div className='allContent'>
@@ -35,6 +33,14 @@ const Game = () => {
         <img src={gif2} alt="game gif"/>
         </div>
         <p className='about'>Storyline: {summary}</p>
+        <div className='buttons'>
+          <div className='update'>
+            <Link to={`/game/edit/${id}`}>
+            <button>Edit</button>
+            </Link>
+          </div>
+        <button>Delete</button>
+        </div>
     </div>
     </div>
   )
