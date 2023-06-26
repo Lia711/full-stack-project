@@ -3,8 +3,7 @@ import "./GamesPage.scss"
 import AllGames from '../../components/AllGames/AllGames'
 import Nav from '../../components/Nav/Nav'
 
-const GamesPage = (props) => {
-    const {games} = props;
+const GamesPage = ({games}) => {
   return (
     <div className='allContent'>
       <Nav/>

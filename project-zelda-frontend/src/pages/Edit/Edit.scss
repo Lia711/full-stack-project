@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "Hyrule";
+    src: url('//HyliaSerifBeta-Regular.otf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    //background-color:rgb(105, 184, 127);
+}
+
+.edit {
+    display: flex;
+    background-color:rgb(105, 184, 127);
+    border: 12px solid #CC9E48;
+
+
+    .edit-form {
+        margin:auto;
+        display: flex;
+        flex-direction: column;
+        height:100vh;
+        padding:30px;
+        background-color:rgb(105, 184, 127);
+    }
+
+    .delete {
+        padding:10px;
+        width:150px;
+        font-size: 25px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #CC9E48;
+        color:#482d0e;
+        border: 3px solid #482d0e;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        top: 567px;
+        left: 700px;
+
+    }
+}

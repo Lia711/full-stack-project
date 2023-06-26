@@ -4,23 +4,25 @@ import { Link, useParams } from "react-router-dom";
 import "./Game.scss"
 import Nav from '../../components/Nav/Nav';
 
-const Game = () => {
-
-  const [selectedGame, setSelectedGame] = useState([]);
+const Game = ({games}) => {
+console.log("games in game component", games)
+  // const [selectedGame, setSelectedGame] = useState([]);
   const {gameId} = useParams();
+  const game = games.find((game)=>game.id==gameId)
+  console.log("game in game component after find", game)
 
-    const getGameById = async gameId => {
-    const url=`http://localhost:8080/game/${gameId}`
-    const response = await fetch(url);
-    const data = await response.json()
-    console.log("data", data)
-    setSelectedGame(data)
-  }
-
-  useEffect(()=> {
-    getGameById(gameId);
-  }, [])
-    const {title, platform, year, id, summary, gif1, gif2} = selectedGame;
+  //   const getGameById = async gameId => {
+  //   const url=`http://localhost:8080/game/${gameId}`
+  //   const response = await fetch(url);
+  //   const data = await response.json()
+  //   console.log("data", data)
+  //   setSelectedGame(data)
+  // }
+  
+  // useEffect(()=> {
+  //   getGameById(gameId);
+  // }, [])
+    const {title, platform, year, id, summary, gif1, gif2} = game;
   return (
     <div className='allContent'>
       <Nav/>
@@ -33,14 +35,11 @@ const Game = () => {
         <img src={gif2} alt="game gif"/>
         </div>
         <p className='about'>Storyline: {summary}</p>
-        <div className='buttons'>
           <div className='update'>
             <Link to={`/game/edit/${id}`}>
-            <button>Edit</button>
+            <button>Edit Game</button>
             </Link>
           </div>
-        <button>Delete</button>
-        </div>
     </div>
     </div>
   )

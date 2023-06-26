@@ -25,7 +25,6 @@ function App() {
     }
   }
 
-console.log("games", games)
   useEffect(()=>{
     getAllGames();
   }, [])

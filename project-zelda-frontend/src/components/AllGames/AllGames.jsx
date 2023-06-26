@@ -2,9 +2,7 @@ import React from 'react'
 import "./AllGames.scss"
 import { Link } from 'react-router-dom';
 
-const AllGames = (props) => {
-    const {games} = props;
-    console.log("this is my games display", games)
+const AllGames = ({games}) => {
     //console.log("art", games[0].box_art)
     return ( games.map((game)=>(
         <div className='gameTile'>
